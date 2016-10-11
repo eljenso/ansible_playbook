@@ -2,6 +2,7 @@ FROM gliderlabs/alpine:3.3
 
 RUN \
   apk-install \
+    bash \
     curl \
     openssh-client \
     python \
@@ -37,4 +38,4 @@ ENV ANSIBLE_SSH_PIPELINING True
 ENV PATH /ansible/bin:$PATH
 ENV PYTHONPATH /ansible/lib
 
-ENTRYPOINT ["ansible-playbook"]
+ENTRYPOINT ["bash"]
