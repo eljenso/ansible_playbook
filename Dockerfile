@@ -38,4 +38,5 @@ ENV ANSIBLE_SSH_PIPELINING True
 ENV PATH /ansible/bin:$PATH
 ENV PYTHONPATH /ansible/lib
 
-ENTRYPOINT ["bash"]
+# overwrite this with 'CMD []' in a dependent Dockerfile
+CMD ["/bin/bash"]
