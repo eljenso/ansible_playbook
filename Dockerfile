@@ -6,6 +6,7 @@ RUN \
     curl \
     openssh-client \
     python \
+    python-dev \
     py-boto \
     py-dateutil \
     py-httplib2 \
@@ -14,6 +15,9 @@ RUN \
     py-pip \
     py-setuptools \
     py-yaml \
+    openssl \
+    gcc \
+    libc-dev \
     tar && \
   pip install --upgrade pip python-keyczar && \
   rm -rf /var/cache/apk/*
